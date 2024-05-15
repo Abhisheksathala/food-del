@@ -4,7 +4,7 @@ export const indexDB = async () => {
   try {
     const password = "ABHISHEK9949"; // Replace <your_password_here> with your actual password
     const ConnectDBInstance = await mongoose.connect(
-      `mongodb+srv://abhisheksathala296:${password}@cluster0.dgfpdlw.mongodb.net/`
+      process.env.MONGO_DB_URI
     );
     console.log(
       "\n- CONNECTED TO MONGODB FROM INDEXdb OF CONFIG",
