@@ -1,0 +1,103 @@
+.loginpopup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.login-pop-up-conttainer {
+    width: 30vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    place-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.login-popup-inpute {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-popup-button {
+
+    width: 100%;
+}
+
+
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.login-popup-title img {
+    cursor: pointer;
+    width: 16px;
+
+}
+
+.login-popup-inpute input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+  
+}
+
+.login-popup-inpute {
+    width: 100%;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.login-popup-button button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color:tomato;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.lgoin-popup-condition{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.lgoin-popup-condition input{
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+
+.loginpopup p span{
+    color:tomato;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.loginpopup p{
+   text-align: center;
+}

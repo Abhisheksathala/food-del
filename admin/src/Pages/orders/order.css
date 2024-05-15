@@ -1,0 +1,21 @@
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+    border: 1px solid tomato;
+}
+.order-item-food{
+    font-weight: 600;
+}
+
+.select{
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width:max(10vw,120px);
+    padding: 10px;
+    outline: none;
+}

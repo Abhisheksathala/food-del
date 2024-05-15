@@ -1,0 +1,73 @@
+
+
+.header{
+    height: 35vw;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    background-image: url("./../../assets/food del assets/frontend_assets/header_img.png");
+}
+
+.header .header-contents{
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
+    max-width: 60%;
+    position: absolute;
+    gap: 1.5vw;
+    left: 6vw;
+    bottom: 10%;
+    color: white;
+
+}
+
+.header-contents  h2{
+    font-weight: 500;
+    font-size:max(6vw,1.7rem) ;
+}
+
+.header-contents p{
+    font-size: 1vw;
+}
+
+.header-contents  button{
+    padding: 0.5vw 1.5vw;
+    background-color: #f9a826;
+    border: none;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: max(1vw,13px);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header-contents  button:hover{
+    background-color: #f7c471;
+}
+
+
+@media screen and (max-width: 1050px){
+    .header{
+        height: 38vw;
+    }
+   .header-contents{
+    max-width: 45%;
+   }   
+}
+@media screen and (max-width: 750px){
+   .header-contents{
+    max-width: 55%;
+   } 
+   .header-contents p{
+    display: none;
+   }
+   .header-contents button{
+    padding: 2vw 4vw;
+   }
+
+}

@@ -1,0 +1,31 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    border: 1px solid #cacaca;
+    font-size: 1em;
+}
+
+.list-table-format .title{
+    color: #f9f9f9;
+}
+.list-table-format img{
+    width: 5rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.curser{
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 0;
+    width: 20px;
+
+}
+@media (max-width:600px) {
+    
+}
