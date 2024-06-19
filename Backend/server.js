@@ -15,13 +15,13 @@ const port = 4000;
 // Middleware
 app.use(express.json());
 app.use(
-  cors({
-    origin: ['http://localhost:5174', 'http://localhost:5173'], // Allow requests from the frontend origin
-    methods: ["GET", "POST"], // Allow GET and POST requests
-    allowedHeaders: ["Content-Type", "Authorization"], // Allow specified headers
-  })
+  cors()
 );
-
+// {
+//     origin: ['http://localhost:5174', 'http://localhost:5173'], // Allow requests from the frontend origin
+//     methods: ["GET", "POST"], // Allow GET and POST requests
+//     allowedHeaders: ["Content-Type", "Authorization"], // Allow specified headers
+//   }
 // API endpoint
 app.use("/api/v1/food", foodRouter);
 app.use("/images", express.static("uploads"));
