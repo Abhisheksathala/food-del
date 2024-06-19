@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 const List = () => {
   const [list, setList] = useState([]);
-  const baseURL = "http://localhost:4000";
+  const baseURL = "https://food-del-1-u2b8.onrender.com";
 
   const fetchlist = async () => {
     try {
