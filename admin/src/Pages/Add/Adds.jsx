@@ -31,7 +31,7 @@ export const Add = () => {
     // Updating the data state with the new value, preserving previous data entries.
     setData(data => ({ ...data, [name]: value }));
   };
-  const url = "http://localhost:4000";
+  const url = "https://food-del-1-u2b8.onrender.com";
   // Function that handles submitting the form.
   const onSubmitHandler = async (event)=>{
     event.preventDefault();
