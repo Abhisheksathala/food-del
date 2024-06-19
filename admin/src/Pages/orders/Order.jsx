@@ -9,7 +9,7 @@ import { assets } from "./../../assets/admin_assets/assets";
 const Order = () => {
   const [orders, setOrders] = useState([]);
   const feachAllorders = async () => {
-    const response = await axios.get("http://localhost:4000/api/v1/order/list");
+    const response = await axios.get("https://food-del-1-u2b8.onrender.com/api/v1/order/list");
     if (response.data.success) {
       setOrders(response.data.data);
       console.log(response.data.data);
@@ -20,7 +20,7 @@ const Order = () => {
   };
   const statusHandler = async (event,orderId) => {
     const response = await axios.post(
-      "http://localhost:4000/api/v1/order/status",{orderId,status:event.target.value}
+      "https://food-del-1-u2b8.onrender.com/api/v1/order/status",{orderId,status:event.target.value}
     );
     if (response.data.success) {
       toast.success("updated successfully");
